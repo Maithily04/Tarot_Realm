@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zodiac Fortune | Tarot Realm</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body class="zodiac-page">
+
+    <!-- Animated Stars -->
+    <div class="stars"></div>
+
+    <!-- Page Title -->
+    <div class="page-title">
+
+        <h1>Zodiac Fortune</h1>
+
+        <p>
+            Select your zodiac sign and discover your cosmic guidance.
+        </p>
+
+    </div>
+
+    <!-- Zodiac Card -->
+
+    <div class="zodiac-card">
+
+        <form method="POST">
+
+            <label
+            style="display:block;
+                   margin-bottom:15px;
+                   font-size:20px;
+                   color:#f5d67b;">
+
+                Select Your Zodiac Sign
+
+            </label>
+
+            <select
+                name="sign"
+                required
+                style="
+                width:100%;
+                padding:15px;
+                border:none;
+                border-radius:12px;
+                background:rgba(255,255,255,.08);
+                color:white;
+                font-size:16px;
+                margin-bottom:20px;">
+
+                <option value="">
+                    Choose a Sign
+                </option>
+
+                {% for zodiac in zodiacs %}
+
+                <option value="{{ zodiac }}">
+                    {{ zodiac }}
+                </option>
+
+                {% endfor %}
+
+            </select>
+
+            <button
+                type="submit"
+                class="modern-btn">
+
+                Reveal Fortune
+
+            </button>
+
+        </form>
+
+        {% if result %}
+
+        <div
+        style="
+        margin-top:40px;
+        background:rgba(255,255,255,.05);
+        padding:30px;
+        border-radius:20px;">
+
+            <h2
+            style="
+            color:#f5d67b;
+            margin-bottom:15px;">
+
+                Your Zodiac Message
+
+            </h2>
+
+            <p
+            style="
+            line-height:1.8;
+            font-size:18px;">
+
+                {{ result }}
+
+            </p>
+
+        </div>
+
+        {% endif %}
+
+        <div style="margin-top:40px;">
+
+            <a href="{{ url_for('dashboard') }}"
+               class="modern-btn">
+
+                Back to Dashboard
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <script src="{{ url_for('static',
+    filename='js/script.js') }}"></script>
+
+</body>
+</html>

@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    color:white;
+    min-height:100vh;
+    overflow-x:hidden;
+    position:relative;
+}
+
+/* ======================
+   BACKGROUNDS
+====================== */
+
+.login-page{
+    background:
+    linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+    url("/static/images/login.jpg");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+.dashboard-page{
+    background:
+    linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+    url("/static/images/home_bg.jpg");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+.knowledge-page{
+    background:
+    linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)),
+    url("/static/images/card_back.jpg");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+.today-page{
+    background:
+    linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+    url("/static/images/home_bg.jpg");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+.monthly-page{
+    background:
+    linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+    url("/static/images/monthly_fortune.jpg");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+.zodiac-page{
+    background:
+    linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+    url("/static/images/zodiac.jpg");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+.result-page{
+    background:
+    linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)),
+    url("/static/images/card_back.jpg");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+/* ======================
+   ANIMATED STARS
+====================== */
+
+.stars{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+
+    background:url("/static/images/stars.png");
+    opacity:.15;
+
+    animation:moveStars 120s linear infinite;
+
+    z-index:-1;
+}
+
+@keyframes moveStars{
+    from{
+        background-position:0 0;
+    }
+    to{
+        background-position:0 -3000px;
+    }
+}
+
+/* ======================
+   PAGE TITLES
+====================== */
+
+.page-title{
+    text-align:center;
+    padding:40px 20px;
+}
+
+.page-title h1{
+    font-family:'Cinzel',serif;
+    font-size:3rem;
+    color:#f5d67b;
+
+    text-shadow:
+    0 0 20px rgba(245,214,123,.4);
+}
+
+/* ======================
+   LOGIN
+====================== */
+
+.login-wrapper{
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.login-card{
+    width:450px;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:25px;
+
+    padding:40px;
+
+    animation:fadeUp 1s ease;
+}
+
+.login-card h1{
+    text-align:center;
+    color:#f5d67b;
+    margin-bottom:15px;
+}
+
+.login-card p{
+    text-align:center;
+    margin-bottom:25px;
+    color:#ddd;
+}
+
+.login-card label{
+    display:block;
+    margin-bottom:5px;
+}
+
+.login-card input{
+    width:100%;
+    padding:14px;
+
+    margin-bottom:15px;
+
+    border:none;
+    outline:none;
+
+    border-radius:12px;
+
+    background:rgba(255,255,255,.08);
+
+    color:white;
+}
+
+.login-btn{
+    width:100%;
+    padding:15px;
+
+    border:none;
+    border-radius:12px;
+
+    background:#f5d67b;
+
+    color:black;
+    font-weight:600;
+
+    cursor:pointer;
+}
+
+/* ======================
+   DASHBOARD
+====================== */
+
+.dashboard-wrapper{
+    padding:60px 8%;
+}
+
+.dashboard-header{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.dashboard-header h1{
+    font-family:'Cinzel',serif;
+    font-size:4rem;
+    color:#f5d67b;
+}
+
+.dashboard-header p{
+    color:#d9d9d9;
+}
+
+.dashboard-grid{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+}
+
+.feature-card{
+    text-decoration:none;
+    color:white;
+
+    padding:35px;
+
+    background:rgba(255,255,255,.05);
+
+    border-radius:20px;
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.4s;
+}
+
+.feature-card:hover{
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 0 30px rgba(245,214,123,.25);
+}
+
+.card-icon{
+    font-size:2rem;
+    margin-bottom:15px;
+    color:#f5d67b;
+}
+
+/* ======================
+   KNOWLEDGE
+====================== */
+
+.knowledge-grid{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+
+    gap:25px;
+
+    padding:40px;
+}
+
+.knowledge-card{
+    background:rgba(255,255,255,.05);
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    backdrop-filter:blur(15px);
+
+    transition:.4s;
+}
+
+.knowledge-card:hover{
+    transform:translateY(-10px);
+}
+
+.knowledge-card img{
+    width:100%;
+    height:450px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card-content h2{
+    color:#f5d67b;
+    margin-bottom:10px;
+}
+
+/* ======================
+   RESULT
+====================== */
+
+.result-wrapper{
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:40px;
+}
+
+.result-card{
+    width:850px;
+
+    text-align:center;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(20px);
+
+    border-radius:30px;
+
+    padding:40px;
+}
+
+.tarot-image{
+    width:320px;
+
+    border-radius:20px;
+
+    margin:20px 0;
+
+    box-shadow:
+    0 0 30px rgba(245,214,123,.3);
+
+    transition:.4s;
+}
+
+.tarot-image:hover{
+    transform:scale(1.05);
+}
+
+.reading-content h2{
+    color:#f5d67b;
+    margin-bottom:10px;
+}
+
+/* ======================
+   FORTUNE
+====================== */
+
+.fortune-card,
+.zodiac-card{
+    width:90%;
+    max-width:1100px;
+
+    margin:60px auto;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(20px);
+
+    border-radius:25px;
+
+    padding:40px;
+}
+
+.fortune-grid{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+
+    margin-top:25px;
+}
+
+.fortune-box{
+    background:rgba(255,255,255,.05);
+
+    border-radius:20px;
+
+    padding:20px;
+}
+
+.fortune-box h2{
+    color:#f5d67b;
+    margin-bottom:10px;
+}
+
+/* ======================
+   BUTTONS
+====================== */
+
+.modern-btn{
+    display:inline-block;
+
+    padding:14px 28px;
+
+    margin:10px;
+
+    text-decoration:none;
+
+    background:#f5d67b;
+
+    color:black;
+
+    border-radius:40px;
+
+    font-weight:600;
+
+    transition:.4s;
+}
+
+.modern-btn:hover{
+    transform:translateY(-5px);
+
+    box-shadow:
+    0 0 20px rgba(245,214,123,.4);
+}
+
+/* ======================
+   ANIMATIONS
+====================== */
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}

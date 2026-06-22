@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Your Reading | Tarot Realm</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body class="result-page">
+
+    <!-- Animated Background -->
+    <div class="stars"></div>
+
+    <div class="result-wrapper">
+
+        <div class="result-card">
+
+            <div class="reading-content">
+
+                <h1>Your Tarot Reading</h1>
+
+                <img
+                    src="{{ url_for('static', filename='images/tarot_card/' + card.image) }}"
+                    alt="{{ card.name }}"
+                    class="tarot-image"
+                >
+
+                <h2>{{ card.name }}</h2>
+
+                <p class="card-meaning">
+                    {{ card.meaning }}
+                </p>
+
+                <div style="margin-top:30px;">
+
+                    <a href="{{ url_for('draw') }}"
+                       class="modern-btn">
+                        Draw Another Card
+                    </a>
+
+                    <a href="{{ url_for('knowledge') }}"
+                       class="modern-btn">
+                        Learn More Cards
+                    </a>
+
+                    <a href="{{ url_for('dashboard') }}"
+                       class="modern-btn">
+                        Dashboard
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>

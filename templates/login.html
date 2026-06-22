@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | Tarot Realm</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body class="login-page">
+
+    <!-- Animated Stars -->
+    <div class="stars"></div>
+
+    <div class="login-wrapper">
+
+        <div class="login-card">
+
+            <h1>TAROT REALM</h1>
+
+            <p>
+                Enter your details and begin your mystical journey.
+            </p>
+
+            <form action="{{ url_for('dashboard') }}" method="GET">
+
+                <label>Full Name</label>
+                <input
+                    type="text"
+                    name="fullname"
+                    placeholder="Enter your full name"
+                    required>
+
+                <label>Date of Birth</label>
+                <input
+                    type="date"
+                    name="dob"
+                    required>
+
+                <label>Email Address</label>
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required>
+
+                <label>Password</label>
+                <input
+                    type="password"
+                    name="password"
+                    placeholder="Enter password"
+                    required>
+
+                <button type="submit" class="login-btn">
+                    Enter Tarot Realm
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="{{ url_for('static',
+    filename='js/script.js') }}"></script>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | Tarot Realm</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body class="dashboard-page">
+
+    <!-- Animated Stars -->
+    <div class="stars"></div>
+
+    <!-- Dashboard -->
+    <div class="dashboard-wrapper">
+
+        <div class="dashboard-header">
+            <h1>TAROT REALM</h1>
+            <p>
+                Explore wisdom, fortune, and celestial guidance.
+            </p>
+        </div>
+
+        <div class="dashboard-grid">
+
+            <!-- Tarot Knowledge -->
+            <a href="{{ url_for('knowledge') }}"
+               class="feature-card">
+
+                <div class="card-icon">📖</div>
+
+                <h2>Tarot Knowledge</h2>
+
+                <p>
+                    Learn the meanings of all 22 Major Arcana cards.
+                </p>
+
+            </a>
+
+            <!-- Draw Card -->
+            <a href="{{ url_for('draw') }}"
+               class="feature-card">
+
+                <div class="card-icon">🃏</div>
+
+                <h2>Draw Tarot Card</h2>
+
+                <p>
+                    Receive a mystical tarot reading instantly.
+                </p>
+
+            </a>
+
+            <!-- Today Fortune -->
+            <a href="{{ url_for('today') }}"
+               class="feature-card">
+
+                <div class="card-icon">✦</div>
+
+                <h2>Today's Fortune</h2>
+
+                <p>
+                    Discover your fortune for today.
+                </p>
+
+            </a>
+
+            <!-- Monthly Fortune -->
+            <a href="{{ url_for('monthly') }}"
+               class="feature-card">
+
+                <div class="card-icon">◐</div>
+
+                <h2>Monthly Fortune</h2>
+
+                <p>
+                    See what this month has in store for you.
+                </p>
+
+            </a>
+
+            <!-- Zodiac -->
+            <a href="{{ url_for('zodiac') }}"
+               class="feature-card">
+
+                <div class="card-icon">☾</div>
+
+                <h2>Zodiac Fortune</h2>
+
+                <p>
+                    Reveal your horoscope and zodiac guidance.
+                </p>
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <script src="{{ url_for('static',
+    filename='js/script.js') }}"></script>
+
+</body>
+</html>

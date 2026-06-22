@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Monthly Fortune | Tarot Realm</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body class="monthly-page">
+
+    <!-- Animated Stars -->
+    <div class="stars"></div>
+
+    <!-- Page Title -->
+    <div class="page-title">
+        <h1>Monthly Fortune</h1>
+        <p>Your cosmic guidance for this month.</p>
+    </div>
+
+    <!-- Fortune Card -->
+    <div class="fortune-card">
+
+        <div class="fortune-grid">
+
+            <div class="fortune-box">
+                <h2>Month</h2>
+                <p>{{ monthly.month }}</p>
+            </div>
+
+            <div class="fortune-box">
+                <h2>Career</h2>
+                <p>{{ monthly.career }}</p>
+            </div>
+
+            <div class="fortune-box">
+                <h2>Love</h2>
+                <p>{{ monthly.love }}</p>
+            </div>
+
+            <div class="fortune-box">
+                <h2>Finance</h2>
+                <p>{{ monthly.finance }}</p>
+            </div>
+
+            <div class="fortune-box">
+                <h2>Advice</h2>
+                <p>{{ monthly.advice }}</p>
+            </div>
+
+        </div>
+
+        <div style="text-align:center; margin-top:40px;">
+
+            <a href="{{ url_for('dashboard') }}"
+               class="modern-btn">
+                Back to Dashboard
+            </a>
+
+        </div>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>

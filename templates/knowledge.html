@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Knowledge | Tarot Realm</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body class="knowledge-page">
+
+    <!-- Animated Background -->
+    <div class="stars"></div>
+
+    <!-- Title -->
+    <div class="page-title">
+        <h1>Tarot Card Knowledge</h1>
+        <p>
+            Discover the wisdom behind the 22 Major Arcana cards.
+        </p>
+    </div>
+
+    <!-- Cards Grid -->
+    <div class="knowledge-grid">
+
+        {% for card in cards %}
+
+        <div class="knowledge-card">
+
+            <img src="{{ url_for('static',
+                     filename='images/tarot_cards/' + card.image) }}"
+                 alt="{{ card.name }}">
+
+            <div class="card-content">
+
+                <h2>{{ card.name }}</h2>
+
+                <p>{{ card.meaning }}</p>
+
+            </div>
+
+        </div>
+
+        {% endfor %}
+
+    </div>
+
+    <!-- Back Button -->
+    <div style="text-align:center; margin:40px;">
+
+        <a href="{{ url_for('dashboard') }}"
+           class="modern-btn">
+
+            Back to Dashboard
+
+        </a>
+
+    </div>
+
+    <script src="{{ url_for('static',
+            filename='js/script.js') }}">
+    </script>
+
+</body>
+</html>

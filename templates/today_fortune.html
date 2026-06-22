@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Today's Fortune | Tarot Realm</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body class="today-page">
+
+    <!-- Animated Stars -->
+    <div class="stars"></div>
+
+    <!-- Page Title -->
+    <div class="page-title">
+        <h1>Today's Fortune</h1>
+        <p>Your cosmic guidance for today.</p>
+    </div>
+
+    <!-- Fortune Card -->
+    <div class="fortune-card">
+
+        <div class="fortune-grid">
+
+            <div class="fortune-box">
+                <h2>Love</h2>
+                <p>{{ fortune.love }}</p>
+            </div>
+
+            <div class="fortune-box">
+                <h2>Career</h2>
+                <p>{{ fortune.career }}</p>
+            </div>
+
+            <div class="fortune-box">
+                <h2>Health</h2>
+                <p>{{ fortune.health }}</p>
+            </div>
+
+            <div class="fortune-box">
+                <h2>Lucky Color</h2>
+                <p>{{ fortune.lucky_color }}</p>
+            </div>
+
+            <div class="fortune-box">
+                <h2>Lucky Number</h2>
+                <p>{{ fortune.lucky_number }}</p>
+            </div>
+
+        </div>
+
+        <div style="text-align:center; margin-top:40px;">
+
+            <a href="{{ url_for('today') }}"
+               class="modern-btn">
+                Generate New Fortune
+            </a>
+
+            <a href="{{ url_for('dashboard') }}"
+               class="modern-btn">
+                Back to Dashboard
+            </a>
+
+        </div>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>
