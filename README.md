@@ -1,12 +1,13 @@
 Tarot Realm
-__________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________
 
 # Overview: 
 Tarot Realm is a modern Flask-based web application that provides an immersive tarot reading experience through an elegant user interface, animated effects, and interactive fortune features.
 
 Designed with a mystical aesthetic and responsive design principles, Tarot Realm combines traditional tarot wisdom with modern web technologies to create an engaging and intuitive user experience.
 
-__________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________
+
 
 # Features:
 1.Tarot Card Knowledge
@@ -43,7 +44,7 @@ Select your zodiac sign and receive a customized horoscope-based fortune.
 - Dynamic backgrounds
 - Floating star animations
 
-__________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________
 
 # Tech Stack: 
 ->Backend:
@@ -60,7 +61,7 @@ ________________________________________________________________________________
  - CSS Animations
  - Responsive Design
 
-__________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________
 
 # Project Structure: 
 
@@ -96,36 +97,20 @@ Tarot_Realm/
     └── zodiac.html
 ```
 
-__________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________
 
 # Installation:
 
-Clone the repository:
-
-
-git clone https://github.com/your-username/Tarot_Realm.git
+1. Clone the repository: git clone https://github.com/your-username/Tarot_Realm.git
 cd Tarot_Realm
-```
 
-Install dependencies:
+2. Install dependencies: pip install -r requirements.txt
 
-```bash
-pip install -r requirements.txt
-```
+3. Run the Flask application: python app.py
 
-Run the Flask application:
+4. Open your browser: http://127.0.0.1:5001
 
-```bash
-python app.py
-```
-
-Open your browser:
-
-```text
-http://127.0.0.1:5001
-```
-
-__________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________
 
 # Future Enhancements: 
 
@@ -137,16 +122,12 @@ ________________________________________________________________________________
 - Personalized Recommendations
 - Dark/Light Theme Toggle
 
-__________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________
 
 # Developer:
+Name: Maithily Bhatt
+B.Tech CSE student passionate about Web Development, Artificial Intelligence, and Software Engineering. Dedicated to creating innovative, user-friendly applications while continuously expanding technical skills and industry knowledge.
 
-Maithily Bhatt
-
-B.Tech Computer Science & Engineering Student
-
-Passionate about Web Development, AI, and creating interactive user experiences through technology.
-
----
+________________________________________________________________________________________________________________________________________
 
 
