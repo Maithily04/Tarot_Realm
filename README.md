@@ -116,7 +116,7 @@ ________________________________________________________________________________
 
 1. Demo Video
 Watch the complete working demonstration of Tarot Realm:
-🔗 Demo Video: https://drive.google.com/file/d/1PyZBMPCdqF_5imsHNknjoBFANuAN0gXj/view?usp=share_link
+🔗 Demo Video: https://drive.google.com/drive/folders/1R3wbtUs8PF-lsZXMQNI59jTLPbyn0XZp?usp=sharing 
 
 2. Website Screenshots
 View screenshots of the user interface and features:
@@ -124,7 +124,7 @@ View screenshots of the user interface and features:
 
 3. Project Presentation
 Access the project presentation containing project overview, architecture, features, and implementation details:
-🔗 Presentation PDF: https://drive.google.com/file/d/1PyZBMPCdqF_5imsHNknjoBFANuAN0gXj/view?usp=share_link
+🔗 Presentation PDF: https://drive.google.com/drive/folders/1R3wbtUs8PF-lsZXMQNI59jTLPbyn0XZp?usp=sharing
 
 ________________________________________________________________________________________________________________________________________
 
