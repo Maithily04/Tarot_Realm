@@ -112,6 +112,22 @@ cd Tarot_Realm
 
 ________________________________________________________________________________________________________________________________________
 
+# Project Resources: 
+
+1. Demo Video
+Watch the complete working demonstration of Tarot Realm:
+🔗 Demo Video: https://drive.google.com/file/d/1PyZBMPCdqF_5imsHNknjoBFANuAN0gXj/view?usp=share_link
+
+2. Website Screenshots
+View screenshots of the user interface and features:
+🔗 Screenshots Folder: https://drive.google.com/drive/folders/1apKsUP1TFRV7pEyXdb1SnioIEPw3lyZ_?usp=share_link 
+
+3. Project Presentation
+Access the project presentation containing project overview, architecture, features, and implementation details:
+🔗 Presentation PDF: https://drive.google.com/file/d/1PyZBMPCdqF_5imsHNknjoBFANuAN0gXj/view?usp=share_link
+
+________________________________________________________________________________________________________________________________________
+
 # Future Enhancements: 
 
 - User Authentication System
